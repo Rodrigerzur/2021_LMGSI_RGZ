@@ -1,0 +1,42 @@
+body{
+  text-align: center;
+  font-family:'Goldman-Bold', cursive;
+}
+
+
+img{
+  width: 50px;
+  height: 50px;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Goldman-Bold';
+}
+
+table{
+	border-collapse: separate;
+	border-spacing:10px 30px;
+	margin: 0px auto;
+	width: 75%;
+}
+
+th, td{
+  border: 1px solid black;
+  width: 16%;
+  vertical-align:middle;
+}
+
+tbody tr:nth-child(2n+1){
+	background-color:cyan;
+	font-family: 'Goldman';
+}
+
+tbody tr:nth-child(2n){
+	background-color:lightblue;
+	font-family: 'Goldman-Bold';
+}
+
+tbody th:hover, td:hover{
+	background-color:#A64B00;
+}	

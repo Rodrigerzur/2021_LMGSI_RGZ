@@ -1,0 +1,65 @@
+* { 	
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+a{ 
+	text-decoration:none;
+	color: black;
+}
+
+@font-face {
+	font-family:'FontAwesome';
+	src:url('');
+}
+
+#content {
+	background-color:grey;
+}
+
+#content #izq {
+	background-color:grey;
+	width:30%;
+	float:left;
+}
+
+#content #der {
+	width:70%;
+	float:right;
+	background-color:lightyellow;
+}
+
+#content #izq .dato {
+	padding:20px;
+}
+
+#content #izq .dato span{
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+#content #izq .dato:before{
+	position: relative;
+	font-family:'FontAwesome';
+	width:30px;
+	height:30px;
+	font-size:20px;
+	text-align:center;
+	line-height:30px;
+	color:white;
+	border:1px solid white;
+	border-radius:50px;
+	padding:5px;
+	top:0px;
+	left:0px;
+}
+
+
+#content #izq .direccion:before{
+	content: '\f041';
+}

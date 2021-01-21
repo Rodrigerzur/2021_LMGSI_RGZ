@@ -1,0 +1,116 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+a {
+	text-decoration:none;
+	color: black;
+}
+
+header{
+	text-align:center;
+}
+
+header h1{
+	font-size: 30px;
+	padding: 25px;
+	font-weight:bold;
+}
+
+header h2{
+	font-size: 25px;
+	padding: 20px;
+	color:red;
+	font-weight:bold;
+}
+
+header h3{
+	font-size: 20px;
+	padding: 15px;
+}
+
+header h4{
+	font-size: 15px;
+	padding: 10px;
+}
+
+nav li{ 
+	display: inline-block;
+	font-weight:bold;
+}
+
+nav a{
+	padding:20px;
+	font-weight:bold;
+}
+
+nav a:hover{ 
+	background-color:grey;
+	color:white;
+	padding:20px;
+	font-weight:bold;
+}
+
+section {
+	width:33.33%;
+	float:left;
+}
+
+main:after {
+	content: "";
+	display:table;
+	clear:both;
+}
+
+article header{
+	color:white;
+}
+
+article {
+	background-color:grey;
+	margin: 2px 10px 10px 0px;
+	border-radius: 5%;
+}
+
+article .content{
+	position:relative;
+	margin-left:125px;
+	margin-right:10px;
+}
+
+article figure{
+	left:2px;
+	top:2px;
+	position:relative;
+	float:left;
+	margin-right:20px;
+	margin-bottom:21px;
+}
+
+article img{
+	width:120px;
+	height:120px;
+}
+
+article figcaption{
+	color:white;
+}
+
+article footer{
+	padding:10px;
+	text-align:center;
+	margin-left:50%;
+}
+
+footer{
+	background-color:grey;
+	color:white;
+	text-align:center;
+	padding: 10px;
+}

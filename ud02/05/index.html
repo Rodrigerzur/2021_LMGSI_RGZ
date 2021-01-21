@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<title>HTML 05 Rodrigo Geras </title>
+		<meta charset="UTF-8">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../../images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../../images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../../images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../../images/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../../images/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align: center;"> Plantilla de formulario de Componentes PC</h1>
+		</header>
+		
+		<form action="#">
+			<fieldset>
+				<legend style="border: 1px solid black; background-color: white">Placa base</legend>
+				<label for="LblModelo">Modelo de la placa base:</label>
+				<input type="text" name="modelo" placeholder="Introduce modelo" id="LblModelo">
+			</fieldset>	
+			<fieldset>
+				<legend style="border: 1px solid black; background-color: white">Torre</legend>
+				Modelo de torre:<br/>
+				<label for="ATX"><input type="radio" name="tipoTorre" id="ATX">ATX</label>
+				<label for="MicroATX"><input type="radio" name="tipoTorre" id="MicroATX">MicroATX</label>
+				<label for="ITX"><input type="radio" name="tipoTorre" id="ITX">ITX</label>
+				<br/>
+				<label for="favcolor">Selecciona un color para la torre:</label>
+				<input type="color" id="favcolor" name="favcolor">
+			
+			</fieldset>	
+			<fieldset>
+				<legend style="border: 1px solid black; background-color: white">Tarjeta Grafica</legend>
+				<table>
+					<tr>
+						<td>
+							<select name="Marca Grafica" id="MarcaGrafica" >
+								<option value="Nvidia">Nvidia</option>
+								<option value="AMD">AMD</option>
+							</select>
+						</td>	
+						<td>
+							<label for ="Refrigeracion"><input type="checkbox" name="OpcionGrafica" id="Refrigeracion">Refrigeracion Incorporada</label>
+							<label for ="VrCompatible"><input type="checkbox" name="OpcionGrafica" id="VrCompatible">VR Compatible</label>
+						</td>
+					</tr>
+				</table>
+			</fieldset>	
+			<fieldset>
+				<legend style="border: 1px solid black; background-color: white">Procesador</legend>
+				<label for="LblGsearch">Buscalo en Google</label>
+				<input type="search" id="LblGsearch" name="Gsearch">
+			</fieldset>
+			<fieldset>
+				<legend style="border: 1px solid black; background-color: white">Ventilacion</legend>
+				<input list="ventilacion" placeholder="Elige una">
+					<datalist id="ventilacion" >
+						<option value="Liquida">
+						<option value="Estandar">
+					</datalist>
+			</fieldset>		
+			<fieldset>
+				<legend style="border: 1px solid black; background-color: white">Memoria Ram</legend>
+				<label for="cantidad">Indica una cantidad de RAM sticks</label>
+				<input type="number" id="cantidad" name="cantidad" min="2" max="6" step="2" placeholder="0">
+				<label for="LblFrecuencia">Especifica una frecuencia aproximada</label>
+				<input type="range" id="LblFrecuencia" name="frecuencia" min="0" max="50">
+			</fieldset>	
+			<fieldset>
+				<legend style="border: 1px solid black; background-color: white">Perifericos</legend>
+				<label for="Lblurl">Añade una url de un teclado</label>
+				<input type="url" id="Lblurl" name="teclado">
+				<input type="image" src="images/img_submit.gif" alt="Submit" width="16" height="16">
+				<br/>
+				<label for="LblFile">Selecciona un archivo para el raton</label>
+				<input type="file" id="LblFile" name="file">
+			</fieldset>	
+			<fieldset>
+				<legend style="border: 1px solid black; background-color: white">Detalles de entrega</legend>
+				<table>
+					<tr>
+						<td>
+							<label for="LblFecha">¿Cuando deseas que se entregue?</label>
+							<p><input type="date" name="FECHA" id="LblFecha"></p>
+						</td>
+						<td>
+							<label for="LblHora">¿Sobre que hora deseas que se entregue?</label>
+							<p><input type="time" name="HORA" id="LblHora"></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="LblTel">Telefono de contacto</label>
+							<p><input type="tel" id="LblTel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(000)000-0000"></p>
+						</td>
+						<td>
+							<label for="LblEmail">Email de contacto</label>
+							<p><input type="email" id="LblEmail" name="email" ></p>
+						</td>
+					</tr>
+					<tr>	
+						<td colspan="2">
+							<textarea name="message" rows="5" cols="30">Observaciones</textarea>
+						</td>
+					</tr>
+				</table>	
+			</fieldset>
+			<fieldset>
+				<legend style="border: 1px solid black; background-color: white">Algunos datos personales</legend>
+				<input type="hidden" id="custId" name="custId" value="1">
+				<label for="LblCumple">¿Cuando es tu cumpleaños?</label>
+				<input type="month" id="LblCumple" name="cumple">
+				<br/>
+				<label for="LblWeek">¿Cuando deseas renovar tu suscripcion?</label>
+				<input type="week" id="LblWeek" name="week">
+				<br/>
+				<label for="pwd">Introduce tu contraseña:</label>
+				<input type="password" id="pwd" name="pwd">
+			</fieldset>
+			<br/>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Borrar">
+		</form>
+	</body>
+</html>

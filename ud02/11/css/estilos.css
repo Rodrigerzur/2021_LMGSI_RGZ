@@ -1,0 +1,53 @@
+h1{
+	background-color:#FF4500;
+}
+
+.par1{
+	background-color:lightblue;
+	
+}
+
+.static{
+	border: solid #FF4500 1px;
+}
+
+.relative{
+	border: dotted #8B008B 1px;
+}
+
+.relative1{
+	position:relative;
+	border: 3px groove #008000;
+	width: 500px;
+	height:150px;
+}
+
+.absolute1{
+	border: ridge #04B404 1px;
+	width: 250px;
+	height:75px;
+	position: absolute;
+	right: 6px;
+	bottom: 6px
+}
+
+.sticky{
+	position: sticky;
+	color:white;
+	background-color:#008000;
+	border: 3px solid #ADFF2F;
+	border-radius: 25px;
+	text-align:center;
+	color: #ADFF2F;
+	top: 0px;
+}
+
+.img1{
+	position:absolute;
+	left: 6px;
+	top: 6px;
+	width:30%;
+	opacity: 0,5;
+	z-index: -1;
+} 
+

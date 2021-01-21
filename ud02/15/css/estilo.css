@@ -1,0 +1,118 @@
+﻿
+/* 
+    Created on : 05-dic-2019, 19:10:50
+    Author     : Amor Rodríguez <amor at marodriguezn@educa.jcyl.es>
+   
+*/
+
+@font-face{
+	font-family: 'fa-solid-900', solid;
+	src: url(../fonts/fontawesome/webfonts/fa-solid-900.woff) format :('woff');
+	src: url(../fonts/fontawesome/webfonts/fa-solid-900.woff2) format :('woff2');
+	src: url(../fonts/fontawesome/webfonts/fa-solid-900.ttf) format :('ttf');
+}
+
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+ul, li {
+	list-style:none;
+}
+
+a {
+	text-decoration:none;
+	color: black;
+}
+
+nav{
+	text-align:center;
+	background-color:grey;
+}
+
+nav li{
+	display:inline-block;
+	margin-right:25px;
+	font-size:2em;
+	padding:10px;
+}
+
+nav .active{
+	text-decoration:underline;
+	text-decoration-color: red;
+}
+
+.header{
+	text-align:center;
+	font-family: 'fa-solid-900',solid;
+}
+h1{
+	border:2px solid red;
+	color:red;
+}
+
+.topmenu{
+	display:inline-block;
+	font-weight:bold;
+	background-color:grey;
+	color:black;
+}
+
+main{
+	background-color:white;
+	width:100%;
+	
+}
+.columnsidemenu {
+	background-color:white;
+	display: table;
+	margin-top:10px;
+	width:30%;
+	position:relative;
+	float:left;
+}
+.columnsidemenu li{
+	background-color:grey;
+	margin-top:10px;
+	margin-right:10px;
+	margin-left:5px;
+	padding:10px;
+	font-size:1.15em;
+}
+
+.columnsidemenu li a{
+		color:white;
+}
+.columncontent{
+	margin-top:20px;
+	width:70%;
+	position:relative;
+	float:right;
+}
+
+article{
+	margin: 2px 10px 10px 0px;
+	size:100%;
+}
+
+article h2{
+	color:red;
+	font-weight:bold;
+	letter-spacing:2px;
+	font-family: 'fa-solid-900', solid;
+	margin-left:5px;
+	margin-top:10px;
+}
+article p{
+	font-size:1.2em;
+	margin-top:10px;
+}
+footer{
+	background-color:grey;
+	color:black;
+	text-align:center;
+	padding: 10px;
+	margin-top:44.5%;
+}
