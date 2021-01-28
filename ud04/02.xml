@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lista SYSTEM '02.dtd'>
+<lista>
+    <continente> Europa
+        <pais> Alemania
+            <capital>Berlín </capital>
+        </pais>
+    </continente>
+    <continente> América
+        <pais> Argentina
+            <capital>Buenos Aires</capital>
+        </pais>
+    </continente> 
+    <continente> América
+        <pais> Bahamas
+            <capital>Nassau </capital>
+        </pais>
+    </continente>
+    <continente> Asia
+        <pais> Afganistán
+            <capital>Kabul </capital>
+        </pais>
+    </continente>
+    <continente> Asia
+        <pais> Arabia Saudita
+            <capital>Riad </capital>
+        </pais>
+    </continente>
+</lista>

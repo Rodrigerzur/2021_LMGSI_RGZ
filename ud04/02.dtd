@@ -1,0 +1,8 @@
+
+<!ELEMENT lista (continente)*>
+
+<!ELEMENT continente (#PCDATA|pais)*>
+
+<!ELEMENT pais (#PCDATA|capital)*>
+
+<!ELEMENT capital (#PCDATA)>

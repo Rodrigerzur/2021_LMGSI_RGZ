@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mail SYSTEM '01.dtd'>
+<mail>
+    <remitente>Rodrigo</remitente>
+    <destinatario>Amor</destinatario>
+    <destinatario>Meli </destinatario>
+    <asunto>Practicas </asunto>
+    <mensaje>Mis ejercicios </mensaje>
+    <fecha> 
+        <dia>28 </dia>
+        <mes>01 </mes>
+        <anyo>2021 </anyo>
+    </fecha>
+    <ficheros> 
+        <nombre>ud04 </nombre>
+        <MIME>.zip </MIME>
+    </ficheros>
+</mail>

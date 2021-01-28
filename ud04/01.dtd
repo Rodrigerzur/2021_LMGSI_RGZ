@@ -1,0 +1,13 @@
+<!ELEMENT remitente (#PCDATA)>
+<!ELEMENT destinatario (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT mensaje (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT MIME (#PCDATA)>
+<!ELEMENT fecha (dia,mes,anyo)>
+<!ELEMENT ficheros (nombre, MIME)>
+<!ELEMENT mail (remitente,destinatario+,asunto?,mensaje?,fecha,ficheros)>
+
