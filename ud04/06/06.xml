@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilo.css"?>
+
+<!DOCTYPE lenguaje [
+	<!ELEMENT nombre (#PCDATA) >
+	<!ELEMENT codigo (#PCDATA)>
+        <!ELEMENT ejemplo (nombre,codigo)>
+	<!ELEMENT lenguaje (ejemplo+)>
+	
+]>
+
+
+<lenguaje>
+    <ejemplo>
+	<nombre>Java</nombre>
+	<codigo>
+	<![CDATA[
+	public class Nombre_Clase
+	{
+     public static void main (String args[])
+     {
+        //bloque de sentencias;
+     }
+	}
+	]]>
+	</codigo>
+    </ejemplo>
+    <ejemplo>
+	<nombre>HTML</nombre>
+	<codigo>
+	<![CDATA[
+		<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Mi pagina de prueba</title>
+		</head>
+		<body>
+			<img src="images/firefox-icon.png" alt="Mi imagen de prueba">
+		</body>
+	</html>
+	]]>
+	</codigo>
+    </ejemplo>
+
+
+
+
+</lenguaje>
+
