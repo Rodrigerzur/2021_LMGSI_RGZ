@@ -1,11 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-
-<root>
-    
-</root>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE horario[
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT horas (#PCDATA)>
+	<!ELEMENT asignatura (nombre, horas)>
+	<!ELEMENT diaSemana (asignatura+)>
+	<!ELEMENT horario (diaSemana+)>
+	<!ATTLIST diaSemana nombre CDATA #REQUIRED>
+]>
+<horario>
+	<diaSemana nombre="Lunes">
+		<asignatura>
+			<nombre>EDD</nombre>
+			<horas>8:30-9:20</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>SINF</nombre>
+			<horas>9:20-11:00</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>PROG</nombre>
+			<horas>11:25-13:05 </horas>
+		</asignatura>
+		<asignatura>
+			<nombre>SINF</nombre>
+			<horas>13:05-13:55</horas>
+		</asignatura>
+	</diaSemana>
+	<diaSemana nombre="Martes">
+		<asignatura>
+			<nombre>BBDD</nombre>
+			<horas>8:30-10:10</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>PROG</nombre>
+			<horas>10:10-11:50</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>LMGSI</nombre>
+			<horas>12:15-13:55</horas>
+		</asignatura>
+	</diaSemana>
+	<diaSemana nombre="Miercoles">
+		<asignatura>
+			<nombre>PROG</nombre>
+			<horas>8:30-10:10</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>FOL</nombre>
+			<horas>10:10-11:00</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>BBDD</nombre>
+			<horas>11:00-13:05</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>EDD</nombre>
+			<horas>13:05-13:55</horas>
+		</asignatura>
+	</diaSemana>
+	<diaSemana nombre="Jueves">
+		<asignatura>
+			<nombre>LMGSI</nombre>
+			<horas>8:30-10:10</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>PROG</nombre>
+			<horas>10:10-11:50</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>SINF</nombre>
+			<horas>12:15-13:55</horas>
+		</asignatura>
+	</diaSemana>
+	<diaSemana nombre="Viernes">
+		<asignatura>
+			<nombre>EDD</nombre>
+			<horas>8:30-9:20</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>SINF</nombre>
+			<horas>9:20-11:00</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>FOL</nombre>
+			<horas>11:00-11:50</horas>
+		</asignatura>
+		<asignatura>
+			<nombre>BBDD</nombre>
+			<horas>12:15-13:55</horas>
+		</asignatura>
+	</diaSemana>
+</horario>
