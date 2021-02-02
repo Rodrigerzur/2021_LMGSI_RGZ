@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE grupo [
     <!ELEMENT grupo (estudiante+)>
-    <!ELEMENT estudiante (nombre)>
-    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT estudiante (#PCDATA)>
     <!ATTLIST estudiante cod ID #REQUIRED>
     <!ATTLIST estudiante idref IDREFS #IMPLIED>
     
 ]>
 <grupo>
     <estudiante cod="E1" idref="E2 E3">
-        <nombre>Rodrigo</nombre>
+        Rodrigo
     </estudiante>
-    <estudiante cod="E2" idref="E2 E3">
-        <nombre>Rodrigo dos</nombre>
+    <estudiante cod="E2" idref="E1 E3">
+        Rodrigo dos
     </estudiante>
-    <estudiante cod="E3" idref="E2 E3">
-        <nombre>Rodrigo tres</nombre>
+    <estudiante cod="E3" idref="E2 E1">
+        Rodrigo tres
     </estudiante>
 </grupo>
