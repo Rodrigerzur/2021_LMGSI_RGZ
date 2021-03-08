@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT receta (nombre,descripcion?,tiempo,ingredientes,instrucciones)>
+<!ATTLIST receta
+    plato (primero|segundo|postre) #REQUIRED >
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT tiempo EMPTY>
+<!ATTLIST tiempo
+    preparacion CDATA #REQUIRED
+    coccion CDATA #IMPLIED >
+<!ELEMENT ingredientes (nombre,cantidad?)+>
+<!ELEMENT cantidad (#PCDATA)>
+<!ATTLIST cantidad 
+    unidad (gramos|pizca|mililitros|chorro|cucharada) #IMPLIED>
+<!ELEMENT instrucciones (paso)+>
+<!ELEMENT paso (#PCDATA)>
