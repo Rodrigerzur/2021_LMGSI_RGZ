@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!ELEMENT mapaestelar (constelacion|estrella)*>
+<!ATTLIST mapaestelar
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED>
+<!ELEMENT constelacion (nombre|superficie|estrellas|objetos|colindantes|observacion)*>
+<!ATTLIST constelacion nombreLatin CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT superficie (#PCDATA)>
+<!ELEMENT estrellas (asterimsmo|masBrillante)*>
+<!ATTLIST estrellas numero CDATA #IMPLIED>
+<!ELEMENT asterimsmo (#PCDATA)>
+<!ELEMENT masBrillante (#PCDATA)>
+<!ATTLIST masBrillante luminosidad CDATA #IMPLIED>
+<!ELEMENT objetos (cumulos|nebulosas|galaxias|cuasares|lluviademeteoros)*>
+<!ELEMENT cumulos (#PCDATA)>
+<!ELEMENT nebulosas (#PCDATA)>
+<!ELEMENT galaxias (#PCDATA)>
+<!ELEMENT cuasares (#PCDATA)>
+<!ELEMENT lluviademeteoros (nombre)*>
+<!ELEMENT colindantes (nombre)*>
+<!ELEMENT observacion (hemisferio|mes|hora)*>
+<!ELEMENT hemisferio (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT estrella (nombre|constelacionpertenece|distancia|luminosidad|temperatura|masa)*>
+<!ELEMENT constelacionpertenece (#PCDATA)>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia medida CDATA #IMPLIED>
+<!ELEMENT luminosidad (#PCDATA)>
+<!ATTLIST luminosidad medida CDATA #IMPLIED>
+<!ELEMENT temperatura (#PCDATA)>
+<!ATTLIST temperatura medida CDATA #IMPLIED>
+<!ELEMENT masa (#PCDATA)>
+<!ATTLIST masa medida CDATA #IMPLIED>

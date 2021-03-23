@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/jhgjuju.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE mapaestelar SYSTEM "jhgjuju.dtd">
+
+    <mapaestelar>
+    ...
+    </mapaestelar>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT mapaestelar (constelacion|estrella)*>
+<!ATTLIST mapaestelar
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT constelacion (nombre|superficie|estrellas|objetos|colindantes|observacion)*>
+<!ATTLIST constelacion
+    nombreLatin CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nombre EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT superficie EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT estrellas (asterimsmo|masBrillante)*>
+<!ATTLIST estrellas
+    numero CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT asterimsmo EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT masBrillante EMPTY>
+<!ATTLIST masBrillante
+    luminosidad CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT objetos (cumulos|nebulosas|galaxias|cuasares|lluviademeteoros)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT cumulos EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nebulosas EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT galaxias EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT cuasares EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT lluviademeteoros (nombre)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT colindantes (nombre)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT observacion (hemisferio|mes|hora)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT hemisferio EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT mes EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT hora EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT estrella (nombre|constelacionpertenece|distancia|luminosidad|temperatura|masa)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT constelacionpertenece EMPTY>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT distancia EMPTY>
+<!ATTLIST distancia
+    medida CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT luminosidad EMPTY>
+<!ATTLIST luminosidad
+    medida CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT temperatura EMPTY>
+<!ATTLIST temperatura
+    medida CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT masa EMPTY>
+<!ATTLIST masa
+    medida CDATA #IMPLIED
+  >

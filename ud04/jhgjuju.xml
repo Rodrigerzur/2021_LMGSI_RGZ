@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<mapaestelar
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='../mapaestelar.xsd'>
+    <constelacion nombreLatin="">
+        <nombre></nombre>
+        <superficie></superficie>
+        <estrellas numero="">
+            <asterimsmo></asterimsmo>
+            <masBrillante luminosidad=""></masBrillante>
+        </estrellas>
+        <objetos>
+            <cumulos></cumulos>
+            <nebulosas></nebulosas>
+            <galaxias></galaxias>
+            <cuasares></cuasares>
+            <lluviademeteoros>
+                <nombre></nombre>
+                <nombre></nombre>
+                <nombre></nombre>
+            </lluviademeteoros>
+        </objetos>
+        <colindantes>
+            <nombre></nombre>
+        </colindantes>
+        <observacion>
+            <hemisferio></hemisferio>
+            <mes></mes>
+            <hora></hora>
+        </observacion>
+    </constelacion>
+    <estrella>
+        <nombre></nombre>
+        <constelacionpertenece></constelacionpertenece>
+        <distancia medida=""></distancia>
+        <luminosidad medida=""></luminosidad>
+        <temperatura medida=""></temperatura>
+        <masa medida=""></masa>
+    </estrella>
+
+</mapaestelar>

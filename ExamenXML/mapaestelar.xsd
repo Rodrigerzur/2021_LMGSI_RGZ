@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="mapaestelar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="constelacion"/>
+                <xs:element ref="estrella"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="constelacion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="superficie"/>
+                <xs:element ref="estrellas"/>
+                <xs:element ref="objetos"/>
+                <xs:element ref="colindantes"/>
+                <xs:element ref="observacion"/>
+            </xs:sequence>
+            <xs:attribute name="nombreLatin" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="superficie" type="xs:decimal"/>
+    <xs:element name="estrellas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="asterimsmo"/>
+                <xs:element ref="masBrillante"/>
+            </xs:sequence>
+            <xs:attribute name="numero" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="asterimsmo" type="xs:integer"/>
+    <xs:element name="masBrillante">
+        <xs:complexType mixed="true">
+            <xs:attribute name="luminosidad" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="objetos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cumulos"/>
+                <xs:element ref="nebulosas"/>
+                <xs:element ref="galaxias"/>
+                <xs:element ref="cuasares"/>
+                <xs:element ref="lluviademeteoros"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="cumulos" type="xs:boolean"/>
+    <xs:element name="nebulosas" type="xs:boolean"/>
+    <xs:element name="galaxias" type="xs:boolean"/>
+    <xs:element name="cuasares" type="xs:boolean"/>
+    <xs:element name="lluviademeteoros">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="nombre"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="colindantes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="nombre"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="observacion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="hemisferio"/>
+                <xs:element ref="mes"/>
+                <xs:element ref="hora"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="hemisferio" type="xs:string"/>
+    <xs:element name="mes" type="xs:string"/>
+    <xs:element name="hora" type="xs:string"/>
+    <xs:element name="estrella">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="constelacionpertenece"/>
+                <xs:element ref="distancia"/>
+                <xs:element ref="luminosidad"/>
+                <xs:element ref="temperatura"/>
+                <xs:element ref="masa"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="constelacionpertenece" type="xs:string"/>
+    <xs:element name="distancia">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="medida" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="luminosidad">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="medida" use="required" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="temperatura">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="medida" use="required" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="masa">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="medida" use="required" type="xs:string"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nombre" type="xs:string"/>
+</xs:schema>
