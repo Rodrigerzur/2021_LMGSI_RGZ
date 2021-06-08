@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"> 
+<languaje>Es</languaje>
+
+<channel>
+  <title>Pr final Rodrigo</title>
+  <link>http://rgz.ieslossauces.es</link>
+  <description>Pr final Rodrigo</description>
+  <item>
+    <title>Pr final</title>
+    <link>http://rgz.ieslossauces.es/html.html</link>
+    <description>HTML</description>
+  </item>
+  <item>
+    <title>Pr final</title>
+    <link>http://rgz.ieslossauces.es/css.html</link>
+    <description>CSS</description>
+  </item>
+  <item>
+    <title>Pr final</title>
+    <link>http://rgz.ieslossauces.es/xml.html</link>
+    <description>XML</description>
+  </item>
+  <item>
+    <title>Pr final</title>
+    <link>http://rgz.ieslossauces.es/xpath.html</link>
+    <description>XPATH</description>
+  </item>
+  <item>
+    <title>Pr final</title>
+    <link>http://rgz.ieslossauces.es/xslt.html</link>
+    <description>XSLT</description>
+  </item>
+</channel>
+
+</rss>
